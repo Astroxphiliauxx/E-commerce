@@ -1,6 +1,4 @@
 import 'package:ecommerce/login.dart';
-import 'package:ecommerce/screens/hidden_drawer.dart';
-import 'package:ecommerce/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

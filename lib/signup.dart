@@ -174,8 +174,14 @@ class _SignUpState extends State<SignUp> {
     );
   }
   void _SignUp() async{
+    showDialog(
+        context: context,
+        builder: (context){
+      return Center(child: CircularProgressIndicator());
+    });
     String email = _emailController.text;
     String password = _passwordController.text;
+    Navigator.of(context).pop();
 
     User? user = await _auth.signUpWithEmailAndPassword(email, password);
     if (user != null){
