@@ -157,7 +157,7 @@ class _HomeScreenState extends State<HomeScreen> {
                        shrinkWrap: true,
                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                          crossAxisCount: 2,
-                         childAspectRatio: (MediaQuery.of(context).size.width - 30 -15)/(2*290),
+                         childAspectRatio: (MediaQuery.of(context).size.width - 30 -15)/(2*300),
                          mainAxisSpacing: 20,
                          crossAxisSpacing: 15,
                    ),

@@ -65,16 +65,27 @@ class _BottomNavigationBar1State extends State<BottomNavigationBar1> {
       body: <Widget>[
 
         HomeScreen(),
-        Container(
-          color: Colors.deepPurple.shade100,
-          alignment: Alignment.center,
-          child: Text('No Items In The Cart !!',
-            style: TextStyle(
-              fontSize: 30,
-              fontStyle: FontStyle.italic,
-            ),
-          ),
+        Column(
+          children: [
+            Container(
+              color: Colors.deepPurple.shade100,
+              alignment: Alignment.center,
+              child: Text('No Items In The Cart !!',
+                style: TextStyle(
+                  fontSize: 30,
+                  fontStyle: FontStyle.italic,
+                ),
+              ),
 
+            ),
+
+            OutlinedButton(onPressed: (){}
+                , child: Text('Add items',
+                style: TextStyle(
+                  color: Colors.black54,
+                  fontSize: 24
+                ),))
+          ],
         ),
 
 
@@ -92,7 +103,7 @@ class _BottomNavigationBar1State extends State<BottomNavigationBar1> {
                           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                                crossAxisCount: 2,
 
-                               childAspectRatio: (MediaQuery.of(context).size.width - 30 -15)/(2*290),
+                               childAspectRatio: (MediaQuery.of(context).size.width - 30 -15)/(2*300),
                                mainAxisSpacing: 20,
                                crossAxisSpacing: 15,
                              ),
